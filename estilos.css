@@ -1,0 +1,42 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Fondo gris claro */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Título principal */
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Estilos para la barra de navegación */
+  nav {
+    background-color: #333; /* Fondo oscuro */
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style: none; /* Elimina los puntos del menú */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra los elementos */
+  }
+  
+  nav li {
+    margin: 0 15px; /* Espaciado entre los elementos */
+  }
+  
+  nav a {
+    color: white; /* Letras blancas */
+    text-decoration: none; /* Elimina el subrayado */
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline; /* Subraya el texto cuando pasas el ratón por encima */
+  }
+  
