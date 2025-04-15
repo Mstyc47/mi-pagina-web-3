@@ -10,8 +10,16 @@
     <img src="perfil.jpg.png" alt="Mi foto">
     <h2>¡Hola! Soy MSTYC</h2>
     <p>Me gusta programar, aprender y fumar tabaco.</p>
-    <button onclick=document.body.style.backgroundColor = 'green'">Cambiar fondo a verde</button>
+    <button id="btn-cambiar-fondo">Cambiar fondo</button>
   </div>
-  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+       const boton = document.getElementById('btn-cambiar-fondo');
+       boton.addEventListener('click', function() {
+        document.body.style.backgroundColor = '#ffcc00';
+       });
+    });
+  </script>
+
 </body>
 </html>
