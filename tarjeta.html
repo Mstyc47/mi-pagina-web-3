@@ -3,22 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi tarjeta</title>
+  <title>Interactividad con JavaScript</title>
 </head>
 <body>
-  <div class="tarjeta">
-    <h2>Mstyc</h2>
-    <p>Este es un ejemplo de tarjeta</p>
-    <button id="btn-cambiar-fondo">Cambiar fondo</button>
-  </div>
+  <button id="btn-cambiar-fondo">Cambiar fondo</button>
 
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const boton = document.getElementById("btn-cambiar-fondo");
-      boton.addEventListener("click", function() {
-        document.body.style.backgroundColor = "#ffcc00"; // Cambiar el fondo a amarillo
-        alert("Fondo cambiado");
-      });
+    // Obtener el botón
+    const boton = document.getElementById("btn-cambiar-fondo");
+
+    // Añadir un evento para cambiar el fondo
+    boton.addEventListener("click", function() {
+      // Cambiar el fondo de la página a un color aleatorio
+      let colores = ["#ffcc00", "#ff5733", "#33ff57", "#3357ff"];
+      let colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
+      document.body.style.backgroundColor = colorAleatorio;
     });
   </script>
 </body>
