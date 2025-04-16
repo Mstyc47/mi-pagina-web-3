@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Saludador</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+      margin: 10px;
+    }
+    #mensaje {
+      font-size: 20px;
+      color: #3366cc;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>¡Hola visitante!</h1>
+  <input type="text" id="nombre" placeholder="Escribe tu nombre">
+  <button id="saludar">Saludar</button>
+
+  <div id="mensaje"></div>
+
+  <script>
+    const boton = document.getElementById("saludar");
+    const inputNombre = document.getElementById("nombre");
+    const mensaje = document.getElementById("mensaje");
+
+    boton.addEventListener("click", function() {
+      const nombre = inputNombre.value.trim();
+
+      if (nombre) {
+        mensaje.textContent = `¡Hola, ${nombre}! Bienvenido.`;
+      } else {
+        mensaje.textContent = "Por favor, escribe tu nombre.";
+      }
+    });
+  </script>
+</body>
+</html>
